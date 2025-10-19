@@ -30,7 +30,3 @@ const server = app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
 
-process.on('SIGINT', () => {
-    console.log('Shutting down...');
-    server.close(() => process.exit(0));
-});
